@@ -1,16 +1,18 @@
 import React, { useState } from 'react'
+import UserInput from './components/UserInput'
+import UserOutput from './components/UserOutput'
 
 const App = () => {
-	const [userInput, setUserInput] = useState({});
+	const [userInput, setUserInput] = useState('');
+
 	const handleInput = input => {
-		console.log(input);
+		// Process the JSON and then set state.
+		setUserInput(input);
 	}
 	return (
 		<div className="assignment">
-			<textarea name="input" cols="30" rows="10" className="assignment__input" onChange={(e) => handleInput(e.target.value)}>
-			</textarea>
-
-
+			<UserInput userInput={handleInput}/>
+			<UserOutput output={userInput}/>
 		</div>
 	)
 }

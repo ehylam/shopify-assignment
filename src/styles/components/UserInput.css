@@ -1,0 +1,12 @@
+textarea {
+	display: block;
+	margin: 10px auto;
+  padding: 10px;
+  border: 0;
+  min-height: 20vh;
+	max-width: 768px;
+	width: 100%;
+	outline: none;
+	background-color: rgb(29, 29, 29);
+	color: rgb(143, 143, 143);
+}
