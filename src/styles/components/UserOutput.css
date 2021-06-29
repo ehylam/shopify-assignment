@@ -1,0 +1,14 @@
+.user_output {
+
+}
+
+.user_output pre {
+	background-color: #d4ebff;
+	min-height: 20vh;
+
+}
+
+.user_output code {
+	padding: 15px;
+	color: #1b1414;
+}

@@ -1,12 +1,18 @@
 textarea {
 	display: block;
-	margin: 10px auto;
   padding: 10px;
   border: 0;
   min-height: 20vh;
-	max-width: 768px;
-	width: 100%;
 	outline: none;
-	background-color: rgb(29, 29, 29);
+	background-color: rgb(19 19 19);
+	padding: 15px;
 	color: rgb(143, 143, 143);
+}
+
+.user_input, .user_output {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 768px;
+	margin: 10px auto;
 }
