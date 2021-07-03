@@ -47,7 +47,7 @@ const handleSettings = settings => {
 			const output = {id:`setting.${block.id}`,settings:
 `
 {% if block.settings.${block.id} == blank %}
- {% assign settings${liquidVar} = block.settings.${block.id} %}
+ {% assign settings${liquidVar} = section.settings.${block.id} %}
 {% else %}
  {% assign settings${liquidVar} = block.settings.${block.id} %}
 {% endif %}
