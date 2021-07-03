@@ -15,6 +15,7 @@
 import React, { useState } from 'react';
 import '../styles/components/UserOutput.css';
 
+
 const handleSettings = settings => {
 	const sectionsArr = [];
 	const blocksArr = [];
@@ -68,13 +69,12 @@ const handleStringOutput = (settings) => {
 		return setting.settings;
 	});
 
+
 	return settingsItems.join('');
-
-
 }
 
 const UserOutput = props => {
-	// const [hasError, sethasError] = useState(false);
+	const [hasError, setHasError] = useState(false);
 	let schema = {};
 	let schemaSettings;
 	let schemaStrings;
@@ -82,6 +82,7 @@ const UserOutput = props => {
 
 	if(props.output) {
 		try {
+
 
 			schema = JSON.parse(props.output)[0];
 			// Sections
